@@ -1,0 +1,15 @@
+<section id="dashboard-page" class="dashboard">
+    <h1>Life is sweet</h1>
+    <ul class="other-recipes-list">
+        {{#each posts }}
+
+        {{> postPreview}}
+
+        {{ else}}
+        <p class="no-recipes">No recipes in database!
+            <a href="/create">Create the first one</a>
+        </p>
+        {{/each}}
+
+    </ul>
+</section>

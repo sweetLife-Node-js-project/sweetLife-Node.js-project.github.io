@@ -1,0 +1,257 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/background2.png");
+}
+
+.contacts {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: rgb(105, 31, 102);
+    border-radius: 0.4rem;
+}
+
+.about {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: rgb(105, 31, 102);
+    border-radius: 0.4rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dashboard {
+    min-height: 100vh;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+}
+
+#site-content>section.basic {
+    text-align: center;
+}
+
+.login form,
+.register form,
+.create form,
+.edit form {
+    margin: 5rem auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgb(206, 96, 200);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.img {
+    width: 15rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0rem;
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+}
+
+.detailsOtherRecipe,
+.detailsMyRecipe,
+.deleteRecipe,
+.otherRecipe,
+.myRecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailsMyRecipe>p:nth-child(2),
+.deleteRecipe>p:nth-child(2),
+.otherRecipe>p:nth-child(2),
+.myRecipe>p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dashboard>nav>ul {
+    display: flex;
+
+}
+
+.dashboard>nav>ul li:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.dashboard .navbar {
+    justify-content: center;
+}
+
+.basic h1,
+.my-recipes h1,
+.dashboard h1 {
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem 0 1rem 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+img.hearts {
+    width: 33px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+div.actions {
+    display: flex;
+    justify-content: center;
+}
+
+div.actions a {
+    margin-right: 10px;
+
+}
+
+.deleteRecipe>form,
+.detailsMyRecipe>form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.my-recipes .my-recipes-list,
+.dashboard .other-recipes-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detailsMyrecipe textarea,
+.my-recipes textarea {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background: #c3b6f1;
+}
+
+footer p {
+    padding: 1rem 0;
+    font-weight: bold;
+    margin: 0rem;
+    color: white;
+}
+
+.no-recipes {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    min-height: 100vh;
+}
+
+textarea#description {
+    height: 100px;
+    resize: none;
+}
+
+.otherRecipe {
+    align-items: inherit;
+    width: 24%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: -8px -2px 28px -8px #000000;
+    margin-left: 50px;
+}
+
+.down {
+    display: inline-block;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgb(206, 96, 200);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+.notFound {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: 750px;
+    background-image: url("../images/404.png");
+    background-repeat: round;
+}
+
+#my-recipes-page {
+    min-height: 100vh;
+}
+
+.error-container {
+    position: fixed;
+    top: 70px;
+    right: 70px;
+    z-index: 200;
+    color: red;
+    font-size: 30px;
+}

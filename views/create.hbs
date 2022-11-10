@@ -1,0 +1,51 @@
+<section id="create-page" class="details">
+    <form id="create-form" action="/create" method="POST">
+        <fieldset>
+            <legend>Create recipe</legend>
+            
+            <p class="field">
+                <label for="name">Name:</label>
+                <span class="input">
+                    <input type="text" name="name" id="name" placeholder="Name" value="{{name}}">
+                </span>
+            </p>
+
+            <p class="field">
+                <label for="description">Description:</label>
+                <span class="input">
+                    <textarea name="description" id="description" placeholder="Description">{{description}}</textarea>
+                </span>
+            </p>
+
+            <p class="field">
+                <label for="ingredients">Ingredients:</label>
+                <span class="input">
+                    <textarea name="ingredients" id="ingredients" placeholder="Ingredients">{{ingredients}}</textarea>
+                </span>
+            </p>
+
+            <p class="field">
+                <label for="image">Image</label>
+                <span class="input">
+                    <input type="text" name="imageUrl" id="image" placeholder="Image" value="{{imageUrl}}">
+                </span>
+            </p>
+
+            <p class="field">
+                <label for="category">Category</label>
+                <span class="input">
+                    <select id="category" name="category">
+                        <option value="">--Choose an option--</option>
+                        <option value="cake">Cake</option>
+                        <option value="cookie">Cookie</option>
+                        <option value="pie">Pie</option>
+                        <option value="muffin">Muffin</option>
+                        <option value="sweets">Sweets</option>
+                    </select>
+                </span>
+            </p>
+
+            <input class="button submit" type="submit" value="Create your recipe">
+        </fieldset>
+    </form>
+</section>

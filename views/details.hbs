@@ -1,0 +1,37 @@
+{{#with post}}
+<section id="details-page" class="details">
+    <div class="recipe-information">
+        <h3>Name: {{name}}</h3>
+        <p class="type">Category: {{category}}</p>
+        <p class="img"><img src="{{imageUrl}}"></p>
+        <div class="actions">
+            {{#if isAuthor}}
+            <a href="/edit/{{_id}}" class="button">Edit</a>
+            <a href="/delete/{{_id}}" class="button">Delete</a>
+
+            {{else}}
+                {{#if hasLiked}}
+            <p>Thanks for liking</p>
+                {{else}}
+            <div class="likes">
+                    {{#if hasUser}}
+                    <a href="/like/{{_id}}" class="button">Like</a>
+                    {{else}}
+                    <img class="hearts" src="/static/images/heart.png" />
+                    <span id="total-likes">Likes: {{likes.length}}</span>
+                    {{/if}}
+            </div>
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="recipe-description">
+        <h3>Description:</h3>
+        <p>{{description}}</p>
+        <h4>Ingredients:</h4>
+        <p>{{ingredients}}</p>
+    </div>
+
+</section>
+{{/with}}

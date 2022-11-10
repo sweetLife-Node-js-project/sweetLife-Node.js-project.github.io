@@ -1,0 +1,12 @@
+<section id="my-recipes-page" class="my-recipes">
+    <h1>My Recipes</h1>
+    <ul class="my-recipes-list">
+        {{#each posts }}
+
+        {{> postPreview}}
+
+        {{ else}}
+        <p class="no-recipes">No recipes in database!</p>
+        {{/each}}
+    </ul>
+</section>
